@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["railscode@gmail.com"]
   gem.description   = "Кэшируемый флеш"
   gem.summary       = "Суммари"
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/vav/rails_cacheable_flash"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
