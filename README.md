@@ -13,7 +13,7 @@ include RailsCacheableFlash
 
 2. В йаваскрипте подключаете js-библиотеку джема и даете указания выводить флеш нотисы перед определенным контейнером
 
-//= require cacheable_flah
+//= require flah
 
 ...
 
@@ -28,3 +28,7 @@ $(document).ready(function() {
   Flash.writeDataFrom('error', '#container980');
 
 });
+
+3. Также можно подключить свои css-стили для флеш-нотисов или использовать наши:
+
+  *= require flash

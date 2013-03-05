@@ -1,0 +1,63 @@
+/* flash */
+
+.fixed_flash {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width:960px;
+}
+
+.flash {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  font-size: 18px;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+}
+
+.flash-notice {
+  border: solid 1px #99cc99;
+  background-color: #e2f9e3;
+}
+
+.flash-notice, .flash-notice a {
+  color: #006600;
+}
+
+.flash-error {
+  border: solid 1px #cc0000;
+  background-color: #eeaaaa;
+  color: #cc0000;
+}
+
+.flash .message {
+  margin: 0 15px;
+  padding: 21px;
+}
+
+.flash .closer {
+  cursor: pointer;
+  float: right;
+  font-size: 23px !important;
+  font-weight: bold;
+  text-align: right;
+  text-decoration: none;
+  width: 10px;
+  margin: 0 15px;
+  padding: 15px;
+}
+
+.flash-error .closer {
+  color:#CC0000;
+  border:1px solid #CC0000;
+}
+
+.flash-message .closer {
+  color: #006600;
+  border:1px solid #006600;
+}
