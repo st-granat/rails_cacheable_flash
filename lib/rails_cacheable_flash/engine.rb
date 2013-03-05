@@ -1,7 +1,8 @@
-module CacheableFlash
+# coding: utf-8
+module RailsCacheableFlash
   class Engine < ::Rails::Engine
     if ::Rails::VERSION::MAJOR == 3 && ::Rails::VERSION::MAJOR >= 1
-      isolate_namespace CacheableFlash
+      isolate_namespace RailsCacheableFlash
     end
   end
 

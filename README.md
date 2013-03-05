@@ -1,4 +1,4 @@
-cacheable_flash
+rails_cacheable_flash
 ===============
 
 Кэшируемый флеш. Позволяет отрабатывать флеш-нотисы на кэшируемых страницах.
@@ -9,7 +9,7 @@ cacheable_flash
 
 1. В нужном контроллере подключаете джем (фактически там, где потенциально могут появляться флеш-нотисы)
 
-include CacheableFlash
+include RailsCacheableFlash
 
 2. В йаваскрипте подключаете js-библиотеку джема и даете указания выводить флеш нотисы перед определенным контейнером
 
@@ -18,8 +18,13 @@ include CacheableFlash
 ...
 
 $(document).ready(function() {
+
   ...
+
   Flash.transferFromCookies();
+
   Flash.writeDataFrom('notice', '#container980');
+
   Flash.writeDataFrom('error', '#container980');
+
 });
