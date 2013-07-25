@@ -2,6 +2,7 @@
 require File.expand_path('../lib/rails_cacheable_flash/version', __FILE__)
 
 Gem::Specification.new do |gem|
+  gem.license       = "MIT"
   gem.authors       = ["Andrey"]
   gem.email         = ["railscode@gmail.com"]
   gem.description   = "Кэшируемый флеш"
